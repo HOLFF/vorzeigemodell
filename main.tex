@@ -1,0 +1,45 @@
+\documentclass{scrreport}
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[combine]{ucs}
+\usepackage[pdftex]{graphicx}
+\usepackage[final]{pdfpages}
+\usepackage{listings} % source code formatting
+\usepackage{blindtext}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{float}
+\usepackage{subfiles}
+\usepackage[numbers]{natbib}
+\usepackage{fullpage}
+\usepackage{hyperref}
+\usepackage{courier}
+\usepackage{color}
+\usepackage{xcolor}
+\usepackage{scrhack}
+\usepackage{siunitx}
+\usepackage{newfloat}
+\bibliographystyle{unsrt}
+\headsep = 35pt
+
+\DeclareOldFontCommand{\bf}{\normalfont\bfseries}{\mathbf}
+
+\ifx\pdftexversion\undefined
+\usepackage[dvips]{graphicx}
+\else
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsRule{*}{mps}{*}{}
+\fi
+
+\setcounter{secnumdepth}{3}
+\setlength{\parskip}{6pt plus0pt minus0pt}
+\setlength{\parindent}{0pt}
+\pagestyle{headings} 
+
+\begin{document}
+\input{1-anleitung.tex}
+\setcounter{secnumdepth}{1}
+
+
+
+\end{document}
